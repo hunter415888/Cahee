@@ -36,14 +36,18 @@ body {
 .link img {
     width: 100%;
 }
-.link:hover:after {
+.link:hover:after { 
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: auto;
     background-image: linear-gradient(to top, #000000, #ffffff);
-    opacity: 1;
+    opacity: 0.35;
 }
 .link:hover:before {
+    content: "";
+    z-index: auto;
     opacity: 0;
 }
 .link:hover .date {
